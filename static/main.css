@@ -1,0 +1,86 @@
+body {
+    background-color: aqua;
+    text-align: center;
+}
+
+.main {
+    text-align: center;
+    padding: auto;
+}
+
+.ding {
+    font-size: 30px;
+    font-family: monospace;
+}
+
+.indd {
+    background-color: floralwhite;
+    margin: auto;
+    height: 80%;
+    width: 370px;
+    padding: 10px;
+    border-radius: 10px;
+
+}
+
+input[type=url],
+select,
+textarea {
+    width: 250px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+button[type=submit] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: center;
+}
+
+button[type=submit]:hover {
+    background-color: #3a09ec;
+}
+
+#d {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+.title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Helvetica Neue", Helvetica,;
+}
+
+.shortenurl {
+    font-family: monospace;
+}
+
+#forurl {
+    background-color: rgb(226, 247, 240);
+    height: auto;
+    width: auto;
+    border-radius: 20px;
+    display: none;
+}
+
+.footer {
+    background-color: rgb(41, 29, 4);
+    margin: auto;
+    height: auto;
+    width: 370px;
+    padding-top: auto;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.texd {
+    color: rgb(255, 255, 255);
+    padding: auto;
+}

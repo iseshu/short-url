@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <link type="text/css" rel="stylesheet" href="/static/main.css" />
+    <link rel="icon" href="{{logo}}" type="image/gif">
+    <meta name="description" content="You Can Shorten Url Using This Website Very Easy">
+    <meta name="keywords" content="HTML, CSS, JavaScript,python,url">
+    <meta name="author" content="Seshu Sai">
+    <title>{{title}}</title>
+    <script>
+        $(document).ready(function () {
+            $("#btnshort").click(function () {
+                // Get value from input element on the page
+                var numValue = $("#url").val();
+                $.get("/api?url=" + numValue, function (data) {
+                    if (data.status = true) {
+                        var url = window.location.href + data.id;
+                        document.getElementById("shortenurl").value = url;
+                        document.getElementById("forurl").style.display = "block";
+                    } else {
+                        alert("Please Enter A Valid URL");
+                    };
+                });
+            });
+        });
+        function copyToClipboard() {
+            var textBox = document.getElementById("shortenurl");
+            textBox.select();
+            document.execCommand("copy");
+            alert("Copy to clipboard");
+        }
+    </script>
+</head>
+
+<body>
+    <h class="title" alt="logo">{{title}}</h>
+    <div class="main">
+        <div class="indd">
+            <label id="d">Enter Link</label><br>
+            <input type="url" id="url" name="homepage" placeholder="Enter Url To Shorten">
+            <br><br>
+            <button type="submit" id="btnshort">Shotren</button>
+            <br><br>
+            <div id="forurl">
+                <input id="shortenurl" type="url" value="" readonly>
+                <button type="button" class="btn btn-outline-info" onclick="copyToClipboard()">copy</button>
+            </div>
+            <br>
+            <b class="adp">----Create Your Own Site Like This----</b>
+            <br>
+            <iframe height="40%" width="80%" src="https://www.youtube.com/embed/">
+            </iframe>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="texd">
+            Made by <a class="texd" href="http://instagram.com/_yarra.s.s_" target="_blank">Seshu Sai</a>
+        </p>
+        <p class="texd">
+            © <a class="texd" href="http://telegram.dog/yssprojects" target="_blank">YssProjects</a>
+        </p>
+    </div>
+</body>
+</body>
+
+</html>
