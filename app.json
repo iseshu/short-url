@@ -1,0 +1,29 @@
+{
+	"name": "Short Url",
+  	"description": "Create Your Own Shotren Website",
+  	"repository": "https://github.com/iseshu/short-url",
+  	"keywords": ["mongodb", "html", "python"],
+  	"env": {
+    "LOGO": {
+    	"description": "Logo For Favicon get it from http://telegraph.thisai.tech/",
+        "value": ""
+    	},
+
+    "TITLE": {
+      "description": "Website Title For Display On Website",
+      "value":""
+    	},
+      "DATABASE_URL": {
+      "description": "MongoDB Database URl For Python",
+      "value":""
+    	}
+  	},
+
+  	"buildpacks": [
+      {
+          "url": "heroku/python"
+    }
+  ],
+
+  "stack": "heroku-20"
+}
