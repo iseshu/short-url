@@ -14,4 +14,4 @@ Make Your Shorten Url Website Using MongoDB Database
 
 ### For API Use This Format
 
-http://<yourappname>.herokuapp.com/api?url=<url-to-shorten>
+`http://<yourappname>.herokuapp.com/api?url=<url-to-shorten>`
