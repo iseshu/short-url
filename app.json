@@ -1,6 +1,6 @@
 {
 	"name": "Short Url",
-  	"description": "Create Your Own Shotren Website",
+  	"description": "Create Your Own Shorten Website",
   	"repository": "https://github.com/iseshu/short-url",
   	"keywords": ["mongodb", "html", "python"],
   	"env": {
