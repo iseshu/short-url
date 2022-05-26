@@ -11,3 +11,7 @@ Make Your Shorten Url Website Using MongoDB Database
 * `TITLE`: Your Website Title.
 * `LOGO`: Your Website LOGO as Url get It From [Telegraph Uploader](http://telegraph.thisai.tech/)
 * `DATABASE_URL`: Get this value from [MongoDB]([https://my.telegram.org/apps](https://www.mongodb.com/))
+
+### For API Use This Format
+
+http://<yourappname>.herokuapp.com/api?url=<url-to-shorten>
