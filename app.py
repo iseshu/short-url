@@ -45,7 +45,7 @@ def api():
     resp.headers['Access-Control-Allow-Origin'] = '*'
     return resp
 
-@app.route("/go/<id>")
+@app.route("/<id>")
 def redir(id):
     x= mycol.find_one(main_data)
     urls = x['urls']
@@ -61,7 +61,7 @@ def redir(id):
 if __name__ == '__main__':
     x= mycol.find_one(main_data)
     if x == None:
-        data = {'ids':[],"urls":[],"_id":main_data}
+        data = {'ids':["create"],"urls":["https://github.com/iseshu/short-url"],"_id":main_data}
         a = mycol.insert_one(data)
         print("Data Created")
     else:
