@@ -4,7 +4,7 @@ import string
 import random
 import os
 
-main_data = "SESHUSAI"
+main_data = "SESHU"
 database = os.environ.get('DATABASE_URL')
 title = os.environ.get('TITLE','Yss Projects')
 logo = os.environ.get('LOGO')
