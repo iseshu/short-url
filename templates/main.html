@@ -21,7 +21,7 @@
                 var numValue = $("#url").val();
                 $.get("/api?url=" + numValue, function (data) {
                     if (data.status = true) {
-                        var url = window.location.href + "go/" + data.id;
+                        var url = window.location.href + data.id;
                         document.getElementById("shortenurl").value = url;
                         document.getElementById("forurl").style.display = "block";
                     } else {
