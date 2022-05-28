@@ -45,7 +45,7 @@ def api():
     resp.headers['Access-Control-Allow-Origin'] = '*'
     return resp
 
-@app.route("/<id>")
+@app.route("/go/<id>")
 def redir(id):
     x= mycol.find_one(main_data)
     urls = x['urls']
