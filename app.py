@@ -64,6 +64,7 @@ if __name__ == '__main__':
         data = {'ids':["create"],"urls":["https://github.com/iseshu/short-url"],"_id":main_data}
         a = mycol.insert_one(data)
         print("Data Created")
+        app.run()
     else:
         print("Data Already Created")
-    app.run()
+        app.run()
