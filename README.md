@@ -10,7 +10,7 @@ Make Your Shorten Url Website Using MongoDB Database
 
 * `TITLE`: Your Website Title.
 * `LOGO`: Your Website LOGO as Url get It From [Telegraph Uploader](http://telegraph.thisai.tech/).
-* `DATABASE_URL`: Get this value from [MongoDB]([https://my.telegram.org/apps](https://www.mongodb.com/)) Save This Database URL For Redeployment.
+* `DATABASE_URL`: Get this value from [MongoDB](https://www.mongodb.com/) Save This Database URL For Redeployment.
 
 ### For API Use This Format
 
